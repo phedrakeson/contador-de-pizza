@@ -44,8 +44,8 @@ main {
   background-color: var(--background-color);
   border: 1px solid var(--background-color);
   border-radius: 20px 20px 0 0;
-  height: 70vh;
   padding: 50px;
+  height: 100%;
 }
 
 .container {
@@ -59,7 +59,7 @@ main {
   position: relative;
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .campo-jogador input {
@@ -87,7 +87,14 @@ main {
 }
 
 .btn {
+  display: flex;
   margin: 60px auto;
+}
+
+.btn:hover,
+.btn-menos:hover,
+.btn-mais:hover {
+  cursor: pointer;
 }
 
 .btn-menos {
