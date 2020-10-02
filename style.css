@@ -14,7 +14,8 @@
 }
 
 h1,
-span {
+span,
+input {
   color: #fff;
   font-family: 'Open Sans', sans-serif;
 }
@@ -49,4 +50,51 @@ main {
 
 .container {
   display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.campo-jogador {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.campo-jogador input {
+  width: 230px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.campo-jogador .total-fatias {
+  position: relative;
+  left: -35px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: var(--main-color);
+  text-align: center;
+  padding: 8px 0 6px 0;
+}
+
+.campo-jogador input {
+  color: #000;
+  font-weight: 400;
+  font-size: 1.375em;
+  text-align: center;
+}
+
+.btn {
+  margin: 60px auto;
+}
+
+.btn-menos {
+  padding-right: 10px;
+}
+
+.btn-mais {
+  position: relative;
+  left: -25px;
 }
