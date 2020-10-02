@@ -1,0 +1,52 @@
+:root {
+  --main-color: #f03434;
+  --background-color: #e8e8e8;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  font-style: normal;
+}
+
+h1,
+span {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+button {
+  color: none;
+  background: none;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+.header {
+  height: 30vh;
+  text-align: center;
+}
+
+.header h1 {
+  padding-top: 60px;
+  font-weight: 300;
+  font-size: 1.625em;
+}
+
+main {
+  background-color: var(--background-color);
+  border: 1px solid var(--background-color);
+  border-radius: 20px 20px 0 0;
+  height: 70vh;
+  padding: 50px;
+}
+
+.container {
+  display: flex;
+}
