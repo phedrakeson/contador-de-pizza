@@ -3,10 +3,10 @@ export default class SliceTotal {
     this.sliceTotal = 0;
   }
   sliceCountPlus() {
-    this.sliceTotal++
+    return this.sliceTotal++;
   }
   sliceCountMinus() {
-    this.sliceTotal--
+    return this.sliceTotal--;
   }
   sliceCountRender() {
     let html = document.getElementById('render');

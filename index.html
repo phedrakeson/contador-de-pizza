@@ -13,10 +13,11 @@
       import SliceTotal from '../scripts/sliceCount.js';
       window.slicetotal = new SliceTotal;
     </script>
+    <script src="../scripts/addField.js" defer></script>
 
     <title>Contador de Pizza</title>
   </head>
-  <body>
+  <body onload="window.slicetotal.sliceCountRender()">
     <header class="header">
       <h1>Hoje eu vou dar prejuízo!</h1>
     </header>
@@ -24,7 +25,7 @@
     <main>
       <div class="container">
         <div class="campo-jogador">
-          <button onclick="window.slicetotal.sliceCountMinus()" class="btn-menos">
+          <button onclick="window.slicetotal.sliceCountMinus(); window.slicetotal.sliceCountRender()" class="btn-menos">
             <img src="img/menos.svg" alt="Diminuir" />
           </button>
           <input type="text" />
@@ -32,7 +33,7 @@
           <div class="total-fatias">
             <span id="render"></span>
           </div>
-          <button onclick="window.slicetotal.sliceCountPlus()" class="btn-mais">
+          <button onclick="window.slicetotal.sliceCountPlus(); window.slicetotal.sliceCountRender()" class="btn-mais">
             <img src="img/mais.svg" alt="Aumentar" />
           </button>
         </div>
